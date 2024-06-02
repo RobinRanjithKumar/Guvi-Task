@@ -1,3 +1,67 @@
 What is HTTP/1.1? (Hypertext Transfer Protocol)
 The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. This version is still in use on the web.
+This document specifies an Internet standards track protocol for the Internet community, and requests discussion and suggestions for improvements.
 
+What is HTTP2?
+HTTP/2 enables full request and response multiplexing. 
+In practice, this means a connection made to a web server from your browser can be used to send multiple requests and receive multiple responses. 
+This gets rid of a lot of the additional time that it takes to establish a new connection for each request
+
+Differences Between HTTP/1.1 and HTTP/2
+As the web has evolved, so has the need for more efficient and faster protocols to handle the increasing complexity and demands of modern web applications. HTTP/1.1, while revolutionary at its time, has limitations that HTTP/2 aims to overcome. Here, we explore the key differences between HTTP/1.1 and HTTP/2.
+
+1. Multiplexing
+HTTP/1.1:
+
+Sequential Processing: Each request-response pair requires a separate TCP connection, or if persistent connections are used, requests are processed sequentially.
+Head-of-Line Blocking: This can lead to delays where the progress of subsequent requests is held up by the first request.
+HTTP/2:
+
+Concurrent Processing: Allows multiple requests and responses to be sent simultaneously over a single TCP connection.
+Eliminates Head-of-Line Blocking: This results in better utilization of available network resources and faster page load times.
+2. Header Compression
+HTTP/1.1:
+
+Plain Text Headers: Headers are sent as plain text, which can be verbose and repetitive, increasing latency and bandwidth usage.
+HTTP/2:
+
+HPACK Compression: Uses HPACK, a header compression algorithm, which reduces the size of headers and decreases latency.
+3. Protocol Format
+HTTP/1.1:
+
+Text-Based Protocol: Commands and data are sent as plain text, making it easier to debug but less efficient for processing.
+HTTP/2:
+
+Binary Protocol: Transmits data in binary format, which is more efficient to parse and less error-prone than text, leading to improved performance.
+4. Server Push
+HTTP/1.1:
+
+Client-Initiated Requests: Every resource must be explicitly requested by the client.
+HTTP/2:
+
+Proactive Resource Sending: Supports server push, allowing servers to send resources to the client before they are requested, reducing the number of round trips needed for loading a page.
+5. Stream Prioritization
+HTTP/1.1:
+
+No Prioritization: All requests are treated equally, potentially leading to inefficiencies in resource loading.
+HTTP/2:
+
+Prioritization Support: Allows clients to assign priorities to different streams, ensuring critical resources are loaded first, optimizing load times and user experience.
+6. Connection Management
+HTTP/1.1:
+
+Multiple Connections: Typically requires multiple TCP connections for fetching different resources, which can lead to increased latency and network congestion.
+HTTP/2:
+
+Single Connection: Uses a single connection for multiple requests and responses, reducing overhead and improving connection efficiency.
+7. Security
+HTTP/1.1:
+
+Optional Encryption: HTTP/1.1 can be used with or without encryption (HTTPS).
+HTTP/2:
+
+Encryption by Default: Although HTTP/2 itself does not mandate encryption, all major browsers require HTTP/2 to be used over TLS (HTTPS), enhancing security.
+Practical Implications
+Performance: HTTP/2 offers significant performance improvements over HTTP/1.1, particularly for web pages with many resources (e.g., images, scripts, stylesheets).
+User Experience: Faster page loads and reduced latency contribute to a better user experience.
+Resource Efficiency: More efficient use of network resources and reduced overhead benefit both clients and servers.

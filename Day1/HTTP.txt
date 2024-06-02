@@ -1,0 +1,3 @@
+What is HTTP/1.1? (Hypertext Transfer Protocol)
+The first usable version of HTTP was created in 1997. Because it went through several stages of development, this first version of HTTP was called HTTP/1.1. This version is still in use on the web.
+

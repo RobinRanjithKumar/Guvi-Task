@@ -1,0 +1,18 @@
+In JavaScript, both the document and window objects are essential for interacting with the web page, but they serve different purposes and have distinct roles:
+
+window Object************************
+Represents the browser window or tab.
+It's the global object, meaning global variables and functions are properties of window.
+Provides methods and properties related to the browser environment (e.g., alert(), setTimeout(), location).
+
+document Object**********************
+Represents the HTML document loaded in the window.
+It's a property of the window object.
+Provides methods and properties for accessing and manipulating the DOM (e.g., getElementById(), createElement()).
+
+***Example Usage:***
+// Accessing the window object
+window.alert("Hello, World!");
+
+// Accessing the document object
+document.getElementById("myElement").textContent = "Hello, DOM!";

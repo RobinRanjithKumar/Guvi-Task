@@ -1,0 +1,83 @@
+{
+    "personal_info": {
+      "name": "Robin Ranjith Kumar",
+      "address": "61/AB Pongimmal Street RathinaPuri Coimbatore, TamilNadu-641027",
+      "phone": "9360507611",
+      "email": "probin1843@gmail.com",
+      "linkedin": "https://www.linkedin.com/in/robin-ranjith-kumar-7714b7267/",
+    },
+    "summary": "Experienced software developer with a strong background in full-stack development, specializing in creating scalable web applications. Proficient in various programming languages and frameworks, with a proven track record of delivering high-quality software solutions.",
+    "experience": [
+      {
+        "job_title": "Data Analyst",
+        "company": "NeilsenIQ",
+        "location": "Chennai, TamilNadu",
+        "start_date": "FEB 2023",
+        "end_date": "Present",
+        "responsibilities": [
+        "Conducted data extraction, transformation, and processes to gather and prepare raw data for analysis."
+        "Once the validation process is completed using Python, the next step is to prepare and finalize the end deliverables for the clients. "
+        "This involves organizing the validated data into a clear and concise format that meets the client's requirements. It is essential to double-check all the information to ensure accuracy and completeness before delivering it to the clients."
+        "Once the validation process is completed using Python, the next step is to prepare and finalize the end deliverables for the clients."
+        "This involves organizing the validated data into a clear and concise format that meets the client's requirements. It is essential to double-check all the information to ensure accuracy and completeness before delivering it to the clients."
+        ]
+      },
+      {
+        "job_title": "ETL Testing",
+        "company": "Cognizant Technologies",
+        "location": "Coimbatore, Tamilnadu",
+        "start_date": "oct 2021",
+        "end_date": "Jan 2023",
+        "responsibilities": [
+          "Support regression and system testing efforts.Debug and problem solve issues found during testing and/or production.Communicate status, issues and blockers with project team",
+          
+        ]
+      },
+    ],
+    "education": [
+      {
+        "degree": "Bachelor of Science in Computer Science",
+        "institution": "Karpagam academy of higher education",
+        "location": "Coimbatore, Tamilnadu",
+        "graduation_year": "2017 - 2020"
+      }
+    ],
+    "skills": [
+      "JavaScript",
+      "React",
+      "Node.js",
+      "Python",
+      "MongoDB",
+      "HTML/CSS",
+      "SQL",
+      "Git & GitHub",
+      "Express",
+      "Docker"
+    ],
+    "certifications": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuing_organization": "Amazon Web Services",
+        "issue_date": "August 2019"
+      }
+    ],
+    "projects": [
+      {
+        "name": "Public Bus Information System",
+        "description": "Developed a scalable Online bus application platform using MERN stack, handling thousands of daily transactions.",
+        "technologies": ["MongoDB", "Express", "React", "Node.js"]
+      },
+    ],
+    "languages": [
+      {
+        "language": "Tamil",
+        "proficiency": "Native"
+      },
+      {
+        "language": "English",
+        "proficiency": "Good"
+      }
+    ]
+}
+
+  

@@ -1,0 +1,56 @@
+//For the above JSON, iterate over all for loops (for, for in, for of, forEach)
+
+
+//1. Using a for loop
+let jsonData = {
+    "employees": [
+        { "name": "John", "age": 30, "position": "Developer" },
+        { "name": "Jane", "age": 25, "position": "Designer" },
+        { "name": "Doe", "age": 40, "position": "Manager" }
+    ]
+};
+
+for (let i = 0; i < jsonData.employees.length; i++) {
+    console.log(jsonData.employees[i].name, jsonData.employees[i].age, jsonData.employees[i].position);
+}
+
+//Using a for...in loop
+let jsonData = {
+    "employees": [
+        { "name": "John", "age": 30, "position": "Developer" },
+        { "name": "Jane", "age": 25, "position": "Designer" },
+        { "name": "Doe", "age": 40, "position": "Manager" }
+    ]
+};
+
+for (let index in jsonData.employees) {
+    console.log(jsonData.employees[index].name, jsonData.employees[index].age, jsonData.employees[index].position);
+}
+
+//3. Using a for...of loop
+let jsonData = {
+    "employees": [
+        { "name": "John", "age": 30, "position": "Developer" },
+        { "name": "Jane", "age": 25, "position": "Designer" },
+        { "name": "Doe", "age": 40, "position": "Manager" }
+    ]
+};
+
+for (let employee of jsonData.employees) {
+    console.log(employee.name, employee.age, employee.position);
+}
+
+//4. Using forEach
+let jsonData = {
+    "employees": [
+        { "name": "John", "age": 30, "position": "Developer" },
+        { "name": "Jane", "age": 25, "position": "Designer" },
+        { "name": "Doe", "age": 40, "position": "Manager" }
+    ]
+};
+
+jsonData.employees.forEach(employee => {
+    console.log(employee.name, employee.age, employee.position);
+});
+
+

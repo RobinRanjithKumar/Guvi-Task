@@ -27,8 +27,8 @@ console.log(person1.getFullName());  // Output: John Doe
 console.log(person1.getDetails());  
 /*
 Output:
-Name: John Doe
-Age: 30
-Gender: Male
-Address: 123 Main St, Anytown, USA
+Name: Robin RanjithKumar
+            Age: 24
+            Gender: Male
+            Address: 61/AB Pongimmal Street Rathinapuri coimbatore, Tamilnadu
 */

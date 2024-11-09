@@ -1,0 +1,16 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#dataContainer {
+    margin-top: 20px;
+}
+
+.data-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #dee2e6;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,19 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+#dataContainer {
+    margin-top: 20px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.data-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #dee2e6;
+}

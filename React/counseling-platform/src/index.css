@@ -1,0 +1,434 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafb;
+  margin: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #3f51b5; /* Professional blue shade */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Balanced spacing */
+  transition: all 0.3s ease-in-out; /* Smooth transition for changes */
+}
+
+/* Logo */
+.navbar .logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px; /* Slight spacing for a modern touch */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar .logo:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Navigation Links */
+.navbar .links {
+  display: flex;
+  gap: 2rem; /* Equal spacing between links */
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; /* Smooth edges for a professional look */
+  position: relative;
+  transition: all 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effects for Links */
+.navbar .links a:hover {
+  background-color: #303f9f; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Active Link Indicator */
+.navbar .links a::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffcc00; /* Gold underline for active/hovered link */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar .links a:hover::after {
+  width: 100%; /* Expand underline on hover */
+}
+
+/* Navbar Hover Animation */
+.navbar:hover {
+  background-color: #2c3e8c; /* Slightly darker shade when hovered */
+}
+
+/* Animation for Scroll (Shrink Navbar on Scroll) */
+.navbar.scrolled {
+  padding: 0.75rem 2rem; /* Shrink padding */
+  background-color: #2e3b8f; /* Darker background when scrolling */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transition: all 0.3s ease-in-out;
+}
+/* Navbar Styling */
+.navbar {
+  background-color: #3f51b5; /* Professional blue tone */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensure space between logo and links */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-right: auto; /* Align the logo to the left */
+}
+
+.navbar .logo:hover {
+  transform: scale(1.1);
+}
+
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.navbar .links a:hover {
+  background-color: #2c3e8c; /* Slightly darker shade on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.navbar .cta {
+  background-color: #ffcc00; /* Call-to-action button in gold */
+  color: #3f51b5;
+  padding: 0.5rem 1.5rem;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .cta:hover {
+  background-color: #ffc107;
+  color: white;
+  transform: scale(1.1); /* Slight zoom */
+}
+
+/* Scroll Shrink Effect */
+.navbar.scrolled {
+  padding: 0.75rem 2rem;
+  background-color: #2c3e8c; /* Darker background when scrolled */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+
+
+/* Footer Styling */
+.footer {
+  background-color: #3f51b5; /* Professional blue tone */
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1.5rem;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.footer .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex: 1;
+}
+
+.footer .tagline {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #cfd8dc;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+}
+
+.footer .social-icons a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffcc00; /* Highlight color */
+  transform: scale(1.2);
+}
+
+.footer .links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: space-around;
+}
+
+.footer .links a,
+.footer .about-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer .links a:hover,
+.footer .about-btn:hover {
+  color: #ffcc00;
+}
+
+.footer .contact-info {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cfd8dc;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footer .brand,
+  .footer .contact-info {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .links {
+    justify-content: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer .links {
+    justify-content: center;
+  }
+
+  .footer .social-icons {
+    justify-content: center;
+  }
+}
+/* Footer Styling */
+.footer {
+  background-color: #3f51b5; /* Professional blue tone */
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.footer .brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer .tagline {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #cfd8dc;
+}
+
+.footer .links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.footer .links a,
+.footer .about-btn {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.footer .links a:hover,
+.footer .about-btn:hover {
+  color: #ffcc00;
+}
+
+.footer .social-icons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  justify-content: flex-end; /* Align to right */
+  width: 100%;
+}
+
+.footer .social-icons a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out, transform 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #ffcc00;
+  transform: scale(1.2);
+}
+
+.footer .contact-info {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #cfd8dc;
+}
+
+.footer .copyright {
+  font-size: 0.9rem;
+  color: #cfd8dc;
+  margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .social-icons {
+    justify-content: flex-end; /* Right alignment for social media icons */
+  }
+}
+
+
+
+/* Cards and Layout */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.card, .appointment-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover, .appointment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3, .appointment-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.card .btn, .appointment-card .btn {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.card .btn:hover, .appointment-card .btn:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Titles */
+.page-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #3f51b5;
+}

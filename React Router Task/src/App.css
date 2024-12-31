@@ -1,0 +1,25 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navigation {
+  display: flex;
+  gap: 20px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #000;
+}
+
+.navigation .active {
+  font-weight: bold;
+  color: green;
+  border-bottom: 2px solid green;
+}
+
+h1 {
+  color: #333;
+}
